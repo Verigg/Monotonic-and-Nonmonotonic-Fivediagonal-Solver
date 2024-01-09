@@ -219,7 +219,7 @@ def main():
         log = open(filename, "w")
         log.write("seed:" + str(salt) + "\n")
         log.write("size:" + str(size) + "\n")
-        log.write("size:" + str(diagonally_dominant) + "\n")
+        log.write("diagonally_dominant:" + str(diagonally_dominant) + "\n")
         log.write(tabulate(A, tablefmt="grid") + "\n")
         log.write("Monotonic:" + "\n")
         log.write("result = " + str(result_Monotonic.tolist()) + "\n")
